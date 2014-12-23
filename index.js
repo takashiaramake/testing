@@ -3,7 +3,7 @@ var app = express();
 var request = require('request');
 
 app.get('/', function(req, res){
-	res.sendfile('/public/index.html');
+	res.sendfile('public/index.html');
 });
 
 app.listen(80,function(){
