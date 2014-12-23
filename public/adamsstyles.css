@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* Everything for the Header */
+
+
+
+
+
+/*--------------------------------------------*/
+
+
+
+/* Everything Script Freewall */
+
+
+
+
+
+			.freewall1 .brick {
+				display: block;
+		        border:0px solid #333;
+		    }
+			.freewall1 img {
+				width: 100%;
+			}
+			.freewall1 .medium {
+				width:250px;
+				height:250px;
+			}
+			.freewall1 .large {
+				width:500px ;
+				height: 500px;
+			}
+		   .freewall1 .x-large {
+				width:750px ;
+				height:750px;
+			}
+
+
+
+
+			.freewall2 .brick {
+				display: block;
+		        border:0px solid #333;
+		    }
+			.freewall2 img {
+				width: 100%;
+			}
+			.freewall2 .medium {
+				width:250px;
+				height:250px;
+			}
+			.freewall2 .large {
+				width:500px ;
+				height: 500px;
+			}
+		   .freewall2 .x-large {
+				width:750px ;
+				height:750px;
+			}
+			.freewall2{
+				width:100%;
+			}
+
+
+/*--------------------------------------------*/
+
+
+
+/*Everything H 1-7 */
+
+
+h1 { 
+	display:block;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    float: left;
+	font-size: 72px;
+	margin-right: 10px;
+	font-family:"Helvetica", Helvetica Neue, Arial, sans-serif;
+    /*display: inline;*/
+}
+
+h1 a {
+	text-decoration:none;
+	color:rgba(0,0,0,1.00)
+}
+
+
+h2 {
+    display:block;
+    margin-bottom: 0px;
+    margin-top: 0px;
+	font-size: 48px;
+	font-family:"Helvetica", Helvetica Neue, Arial, sans-serif;
+}
+
+
+h2 a {
+	text-decoration:none;
+	color:rgba(0,0,0,1.00)
+}
+
+
+
+h3 a {
+	text-decoration:none;
+	color:rgba(0,0,0,1.00)
+}
+
+/*--------------------------------------------*/
+
+
+
+
+/* Everything Body */ 
+
+body {
+	font-family:"Helvetica", Helvetica Neue, Arial, sans-serif;
+	background-image:url(resources/crossword.png);
+
+}
+
+p {
+	color:rgba(0,0,0,0.64)
+}
+
+
+a:hover {
+	color:rgba(28,117,188,1.00)
+}
+
+
+#container {
+
+}
+
+
+#nav_bar_top {
+width: 100%;
+}
+
+
+#top_image {
+	display:block;
+	left:0px;
+	top:0px;
+	padding-top:25px;
+	
+}
+
+
+#top_image img{
+		width:100%;
+}
+
+
+#nav_squares{
+position:fixed; 
+left:1%; 
+top: 50%; 
+max-width:4%;
+z-index:2000
+}
+
+
+#down_arrow {
+	position:absolute; 
+	top:50%; 
+	left:40%; 
+	right:40%;
+	
+}
+
+
+#main_article {
+	width:60%;
+	float:left;
+	padding: 5%;
+}
+
+
+aside {
+	float:right; 
+	width:20%; 
+	padding-right:5%; 
+	padding-top:5%;
+}
+
+
+aside img {
+	width:100%;
+}
+
+
+#gallery {
+	float:left;
+	width:90%;
+	padding:5%;
+}
+
+
+
+
+
+/*--------------------------------------------*/
+
+
+/* Everything Footer */
+
+
+
+#footer {
+	clear:both;
+	position:relative;
+	z-index:10;
+	height: 300px;
+	margin-top: 30px;
+	background-image:url(resources/squairy_light.png);
+	border-top: 2px solid #000000;
+	padding-left: 5%;
+}
+
+
+#external_links {
+	float:left;
+	width:100%;
+
+}
+
+
+#footer tbody a {
+	text-decoration:none;
+	color:rgba(28,117,188,1.00);
+
+}
+	
+#footer table {
+	line-height:0;
+}

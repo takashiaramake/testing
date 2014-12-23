@@ -1,0 +1,451 @@
+<!doctype html>
+<html>
+
+<head>
+<title> Ansel Adams </title>
+<meta charset="UTF-8">
+<link href="adamsstyles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="lightbox.css"/>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/freewall.js"></script>
+        <script type="text/javascript" src="js/lightbox.js"></script>
+        <script src="js/bind-polyfill.js"></script>
+		<script src="js/smooth-scroll.js"></script>
+        <script src="js/jquery.nicescroll.js"></script>
+        
+<script>
+$(document).ready(
+
+  function() { 
+	
+    $("html").niceScroll(); 
+
+  }
+
+);
+
+</script>        
+        
+</head>
+
+
+<body onLoad="MM_preloadImages('resources/navsquareover.png')">
+
+
+
+
+<div id="container">
+
+<!--
+<div id="down_arrow"><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#main_article"><img src="Resources/downarrow.png" alt="down arrow"> </a>
+</div>
+-->
+
+<div id="nav_squares"><!-- #BeginLibraryItem "/library/navsquares.lbi" -->
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<body onLoad="MM_preloadImages('../resources/navsquareover.png')"><table width="100%" border="0">
+  <tbody>
+    <tr>
+      <td><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#top_image" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('navsquare1','','resources/navsquareover.png',1)"><img src="resources/navsquare.png" alt="" width="40" height="40" id="navsquare1"></a></td>
+    </tr>
+    <tr>
+      <td><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#main_article" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('navsquare2','','resources/navsquareover.png',1)"><img src="resources/navsquare.png" alt="navsquare2" width="40" height="40" id="navsquare2"></a></td>
+    </tr>
+    <tr>
+      <td><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#gallery" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('navsquare3','','resources/navsquareover.png',1)"><img src="resources/navsquare.png" alt="navsquare3" width="40" height="40" id="navsquare3"></a></td>
+    </tr>
+    <tr>
+      <td><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#in_color" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('navsquare4','','resources/navsquareover.png',1)"><img src="resources/navsquare.png" alt="navsquare4" width="40" height="40" id="navsquare4"></a></td>
+    </tr>
+    <tr>
+      <td><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#footer" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('navsquare5','','resources/navsquareover.png',1)"><img src="resources/navsquare.png" alt="navsquare5" width="40" height="40" id="navsquare5"></a></td>
+    </tr>
+  </tbody>
+</table>
+<!-- #EndLibraryItem --></div>
+
+
+<div id="navigation"><!-- #BeginLibraryItem "/library/adamsnavigation.lbi" -->
+<style>
+
+/* all rules to deal with H1 go here */
+h1 { 
+    margin-bottom: 0px;
+    margin-top: 0px;
+    float: left;
+	font-size: 72px;
+	margin-right: 10px;
+	font-family:"Helvetica", Helvetica Neue, Arial, sans-serif;
+    /*display: inline;*/
+}
+
+h1 a {
+	text-decoration:none;
+	color:rgba(0,0,0,1.00)
+}
+
+h1 a:hover {
+	color: rgba(28,117,188,1.00);
+}
+
+/* all rules to deal with nav go here */
+
+.navcontainer{
+	position:fixed;
+	top:0;
+	width:100%;
+	display:block;
+	background-color:rgba(255,255,255,1.00);
+	padding-bottom:0.25em;
+	z-index:1000;
+}
+
+.top-nav-outer {
+	padding-left:5%;
+    width: 100%;
+    position: relative;
+}
+
+.top-nav-inner {
+	width: 100%;
+
+}
+
+
+nav ul {
+	list-style:none;
+	font-family:"Helvetica", Helvetica Neue, Arial, sans-serif;
+}
+
+nav ul li {
+	display:block;
+	float:left;
+	margin:15px;
+	padding:28px 0 0 0;
+	font-size: 24px
+}
+
+nav ul li a{
+
+	text-decoration:none;
+	color:rgba(0,0,0,1.00)	
+}
+
+nav ul li a:hover {
+	color:rgba(28,117,188,1.00)
+}
+
+
+
+</style>
+
+<div class="navcontainer">
+  <div class="top-nav-outer">
+    <div class="top-nav-inner">
+      <h1><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#top_image">Ansel Adams </a></h1>
+      <nav>
+        <ul>
+          <li> <a data-scroll data-options='{ "easing": "easeInQuad" }' href="#main_article">Bio</a></li>
+          <li> <a data-scroll data-options='{ "easing": "easeInQuad" }' href="#gallery">Gallery</a></li>
+          <li> <a data-scroll data-options='{ "easing": "easeInQuad" }' href="#in_color">In Color </a></li>
+          <li> <a data-scroll data-options='{ "easing": "easeInQuad" }' href="#footer"> Contact </a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- #EndLibraryItem --></div>
+
+<div id="top_image">
+<img src="Resources/bandw/snakeriver.jpg" alt="snake river photo">
+</div>
+
+
+
+
+<article id="main_article"> 
+<hr size="1">
+<h2> About Ansel Adams </h2> 
+
+<h3> Synopsis </h3>
+
+<p>Ansel Adams was born on February 20, 1902, in San Francisco, California. Adams rose to prominence as a photographer of the American West, particularly Yosemite National Park, using his work to promote conservation of wilderness areas. His iconic black-and-white images helped to establish photography among the fine arts. He died in Monterey, California, on April 22, 1984.</p>
+
+<h3>Early Life</h3>
+
+<p>Ansel Adams was born in on February 20, 1902, in San Francisco, California. His family came to California from New England, having migrated from Ireland in the early 1700s. His grandfather founded a prosperous lumber business, which Adams’ father eventually inherited. Later in life, Adams would condemn that industry for depleting the redwood forests.</p>
+
+<p>As a young child, Adams was injured in the San Francisco earthquake of 1906, when an aftershock threw him into a garden wall. His broken nose was never properly set, remaining crooked for the rest of his life.</p>
+
+<p>Adams was a hyperactive and sickly child with few friends. Dismissed from several schools for bad behavior, he was educated by private tutors and members of his family from the age of 12.</p>
+
+<p>Adams taught himself the piano, which would become his early passion. In 1916, following a trip to Yosemite National Park, he also began experimenting with photography. He learned darkroom techniques and read photography magazines, attended camera club meetings, and went to photography and art exhibits. He developed and sold his early photographs at Best’s Studio in Yosemite Valley.</p>
+
+<p>In 1928, Ansel Adams married Virginia Best, the daughter of the Best’s Studio proprietor. Virginia inherited the studio from her artist father on his death in 1935, and the Adamses continued to operate the studio until 1971. The business, now known as the Ansel Adams Gallery, remains in the family.</p>
+
+<h3>Career</h3>
+
+<p>Adams’ professional breakthrough followed the publication of his first portfolio, Parmelian Prints of the High Sierras, which included his famous image “Monolith, the Face of Half Dome.” The portfolio was a success, leading to a number of commercial assignments.</p>
+
+<p>Between 1929 and 1942, Adams’ work and reputation developed. Adams expanded his repertoire, focusing on detailed close-ups as well as large forms, from mountains to factories. He spent time in New Mexico with artists including Alfred Stieglitz, Georgia O’Keeffe and Paul Strand. He began to publish essays and instructional books on photography.</p>
+
+<p>During this period, Adams joined photographers Dorothea Lange and Walker Evans in their commitment to affecting social and political change through art. Adams’ first cause was the protection of wilderness areas, including Yosemite. After the internment of Japanese people during World War II, Adams photographed life in the camps for a photo essay on wartime injustice.</p>
+
+<p>Weeks before the attack on Pearl Harbor in 1941, Adams shot a scene of the moon rising above a village. Adams re-interpreted the image—titled “Moonrise, Hernandez, New Mexico”—over nearly four decades, making over a thousand unique prints that helped him to achieve financial stability.</p>
+
+<h3>Later Life</h3>
+
+<p>By the 1960s, appreciation of photography as an art form had expanded to the point at which Adams’ images were shown in large galleries and museums. In 1974, the Metropolitan Museum of Art in New York hosted a retrospective exhibit. Adams spent much of the 1970s printing negatives in order to satisfy demand for his iconic works. Adams had a heart attack and died on April 22, 1984, at the Community Hospital of the Monterey Peninsula in Monterey, California, at the age of 82.</p>
+</article>
+
+
+<aside>
+<img src="resources/adams_portrait.jpg" alt="Ansel Adams">
+&nbsp;
+<img src="resources/adams_portrait_2.jpg" alt="Ansel Adams">
+
+<p><em>Environmental Activist, Photographer (1902–1984)</em></p>
+
+
+</aside>
+
+
+
+
+<div id="gallery">
+<hr size="1">
+<h2> Gallery </h2>
+&nbsp;
+
+<div class="freewall1">
+			<a href="resources/bandw/aab04.jpg" class="brick medium" data-lightbox="adams" data-title="Ansel Adams Photo 01"><img src="resources/cropped/aab04.jpg"alt="" /></a>
+		    <a href="resources/bandw/aaf16.jpg" class="brick large" data-lightbox="adams" title="Ansel Adams Photo 02"><img src="resources/cropped/aaf16.jpg" alt="" /></a>
+		    <a href="resources/bandw/aak05.jpg" class="brick large" data-lightbox="adams" data-title="Ansel Adams Photo 03"><img src="resources/cropped/aak05.jpg" alt="" /></a>
+		    <a href="resources/bandw/aap04.jpg" class="brick large" data-lightbox="adams" data-title="Ansel Adams Photo 04"><img src="resources/cropped/aap04.jpg"alt="" /></a>
+		    <a href="resources/bandw/aaf16.jpg" class="brick medium" data-lightbox="adams" data-title="Ansel Adams Photo 05"><img src="resources/cropped/aaf16.jpg" alt="" /></a>
+		    <a href="resources/bandw/aaw06.jpg" class="brick medium" data-lightbox="adams" data-title="Ansel Adams Photo 06"><img src="resources/cropped/aaw06.jpg" alt="" /></a>
+		    <a href="resources/bandw/aaw19.jpg" class="brick medium" data-lightbox="adams" data-title="Ansel Adams Photo 07"><img src="resources/cropped/aaw19.jpg" alt="" /></a>
+            <a href="resources/bandw/canyon chelly.jpg" class="brick large" data-lightbox="adams" data-title="Ansel Adams Photo 08"><img src="resources/cropped/canyon chelly.jpg" alt="" /></a>
+		    <a href="resources/bandw/church.jpg" class="brick medium" data-lightbox="adams" data-title="Ansel Adams Photo 09"><img src="resources/cropped/church.jpg" alt="" /></a>
+		    <a href="resources/bandw/mountains.jpg" class="brick medium" data-lightbox="adams" data-title="Ansel Adams Photo 10"><img src="resources/cropped/mountains.jpg" alt="" /></a>
+		    <a href="resources/bandw/mt moran.jpg" class="brick medium" data-lightbox="adams" data-title="Ansel Adams Photo 11"><img src="resources/cropped/mt moran.jpg" alt="" /></a>
+		    <a href="resources/bandw/snakeriver.jpg" class="brick medium" data-lightbox="adams" data-title="Ansel Adams Photo 12"><img src="resources/cropped/snakeriver.jpg" alt="" /></a>
+		    <a href="resources/bandw/wilderness.jpg" class="brick large" data-lightbox="adams" data-title="Ansel Adams Photo 13"><img src="resources/cropped/wilderness.jpg" alt="" /></a>
+          
+		</div>
+        
+
+     
+<hr size="1">
+<div id="in_color" style="float:left; width:100%;">
+<h2> The Ansel Adams Wilderness </h2>
+<p style="width:60%;"> Located in the Sierra Nevada mountain range of California, the Ansel Adams Wilderness is a wilderness area encompassing 937 square kilometers (362 square miles or 231,533 acres). Within the Ansel Adams Wilderness are glaciated mountains including Mount Ritter, Banner Peak, and the Minarets, all of which are part of the Ritter Range. The wilderness area is also home to many lakes, including Shadow Lake, Thousand Island Lake, Lake Ediza, and Garnet Lake. A popular feature located in the Ansel Adams Wilderness is Devils Postpile National Monument, an unusually symmetrical formation of columnar basalt. Visitors to the wilderness area can enjoy 562 kilometers (349 miles) of hiking trails, opportunities for technical rock climbing on the Minarets, and cross-country skiing at Mammoth Mountain and June Mountain in the winter. </p>
+&nbsp;
+
+
+<div class="freewall2" style="float:left;">
+			<a href="resources/color/aac01.jpg" class="brick medium" data-lightbox="adams_color" data-title="Ansel Adams Wilderness 01"><img src="resources/colorcropped/aac01_cropped.jpg"alt="" /></a>
+		    <a href="resources/color/aac02.jpg" class="brick large" data-lightbox="adams_color" title="Ansel Adams Wilderness 02"><img src="resources/colorcropped/aac02_cropped.jpg" alt="" /></a>
+		    <a href="resources/color/aac03.jpg" class="brick large" data-lightbox="adams_color" data-title="Ansel Adams Wilderness 03"><img src="resources/colorcropped/aac03_cropped.jpg" alt="" /></a>
+		    <a href="resources/color/aac04.jpg" class="brick large" data-lightbox="adams_color" data-title="Ansel Adams Wilderness 04"><img src="resources/colorcropped/aac04_cropped.jpg"alt="" /></a>
+		    <a href="resources/color/aac05.jpg" class="brick medium" data-lightbox="adams_color" data-title="Ansel Adams Wilderness 05"><img src="resources/colorcropped/aac05_cropped.jpg" alt="" /></a>
+		    <a href="resources/color/aac06.jpg" class="brick medium" data-lightbox="adams_color" data-title="Ansel Adams Wilderness 06"><img src="resources/colorcropped/aac06_cropped.jpg" alt="" /></a>
+		    <a href="resources/color/aac07.jpg" class="brick medium" data-lightbox="adams_color" data-title="Ansel Adams Wilderness 07"><img src="resources/colorcropped/aac07_cropped.jpg" alt="" /></a>
+            <a href="resources/color/aac08.jpg" class="brick large" data-lightbox="adams_color" data-title="Ansel Adams Wilderness 08"><img src="resources/colorcropped/aac08_cropped.jpg" alt="" /></a>
+		    <a href="resources/color/aac09.jpg" class="brick medium" data-lightbox="adams_color" data-title="Ansel Adams Wilderness 09"><img src="resources/colorcropped/aac09_cropped.jpg" alt="" /></a>
+		    <a href="resources/color/aac10.jpg" class="brick medium" data-lightbox="adams_color" data-title="Ansel Adams Wilderness 10"><img src="resources/colorcropped/aac10_cropped.jpg" alt="" /></a>
+		    <a href="resources/color/aac11.jpg" class="brick medium" data-lightbox="adams_color" data-title="Ansel Adams Wilderness 11"><img src="resources/colorcropped/aac11_cropped.jpg" alt="" /></a>
+		    <a href="resources/color/aac12.jpg" class="brick medium" data-lightbox="adams_color" data-title="Ansel Adams Wilderness 12"><img src="resources/colorcropped/aac12_cropped.jpg" alt="" /></a>
+		    <a href="resources/color/aac13.jpg" class="brick large" data-lightbox="adams_color" data-title="Ansel Adams Wilderness 13"><img src="resources/colorcropped/aac13_cropped.jpg" alt="" /></a>
+          
+		</div>
+
+  </div>
+
+
+</div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+
+<div id="footer">
+
+<div id="external_links">
+<h2> External</h2>
+<table width="20%" border="0" height="20px">
+  <tbody>
+    <tr>
+      <td><a href="https://www.facebook.com/pages/The-Ansel-Adams-Gallery/69158596573" target="_blank"> <h4> Facebook </h4> </td>
+      <td><a href="https://twitter.com/TheAnselAdams" target="_blank"> <h4> Twitter </h4></td>
+      <td><a href="https://www.tumblr.com/tagged/ansel-adams" target="_blank"> <h4> Tumblr </h4> </td>
+    </tr>
+    <tr>
+      <td ><a href="http://www.pinterest.com/whiteflowerlady/ansel-adams/" target="_blank"> <h4> Pintrest </h4> </td>
+      <td ><a href="https://plus.google.com/108154900715404018649/posts" target="_blank"> <h4> Google+ </h4> </td>
+      <td ><a href="https://www.youtube.com/watch?v=jvt1ImIKi0U" target="_blank"> <h4> YouTube </h4></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div>
+&nbsp;
+<h3><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#top_image"> Back to Top</a></h3>
+</div>
+
+</div>
+
+
+ </div>
+</body>
+
+
+
+        
+	<script type="text/javascript">
+			var wall = new freewall('.freewall1');
+			var start = new Date().getTime();
+			wall.reset({
+	            selector: '.brick',
+	            animate: true,
+	            gutterX: 20,
+	            gutterY: 20,
+	            cellW: 250,
+	            cellH: 250,
+	            onResize: function() {
+	                wall.fitWidth();
+	            },
+	            onComplete: function() {
+					console.log("Showup", new Date().getTime() - start);
+				}
+		    });
+
+			wall.addCustomEvent("onGridReady", function(container, setting) {
+				start = new Date().getTime();
+			});
+
+			wall.addCustomEvent("onGridArrange", function(container, setting) {
+				console.log("Arrange", new Date().getTime() - start);
+				start = new Date().getTime();
+			});
+
+
+			$(function() {
+				
+				var images = wall.container.find('.brick');
+				images.find('img').load(function() {
+					wall.fitWidth();
+				});
+
+			});
+			
+			</script>
+            
+            <script>
+
+
+var wall1 = new freewall('.freewall2');
+var start = new Date().getTime();
+			wall1.reset({
+	            selector: '.brick',
+	            animate: true,
+	            gutterX: 20,
+	            gutterY: 20,
+	            cellW: 250,
+	            cellH: 250,
+	            onResize: function() {
+	                wall1.fitWidth();
+	            },
+	            onComplete: function() {
+					console.log("Showup", new Date().getTime() - start);
+				}
+		    });
+
+			wall1.addCustomEvent("onGridReady", function(container, setting) {
+				start = new Date().getTime();
+			});
+
+			wall1.addCustomEvent("onGridArrange", function(container, setting) {
+				console.log("Arrange", new Date().getTime() - start);
+				start = new Date().getTime();
+			});
+
+
+			$(function() {
+				
+				var images = wall1.container.find('.brick');
+				images.find('img').load(function() {
+					wall1.fitWidth();
+				});
+
+			});
+
+
+
+
+		</script>
+        
+        
+        	
+        
+        
+        
+        <script>
+ 		 smoothScroll.init({
+			speed: 1000,
+			easing: 'easeInOutCubic',
+			offset: 0,
+			updateURL: true,
+			callbackBefore: function ( toggle, anchor ) {},
+			callbackAfter: function ( toggle, anchor ) {}
+		});
+		</script>
+
+
+
+</html>

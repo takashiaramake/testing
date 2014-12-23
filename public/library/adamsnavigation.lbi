@@ -1,0 +1,96 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+
+/* all rules to deal with H1 go here */
+h1 { 
+    margin-bottom: 0px;
+    margin-top: 0px;
+    float: left;
+	font-size: 72px;
+	margin-right: 10px;
+	font-family:"Helvetica", Helvetica Neue, Arial, sans-serif;
+    /*display: inline;*/
+}
+
+h1 a {
+	text-decoration:none;
+	color:rgba(0,0,0,1.00)
+}
+
+h1 a:hover {
+	color: rgba(28,117,188,1.00);
+}
+
+/* all rules to deal with nav go here */
+
+.navcontainer{
+	position:fixed;
+	top:0;
+	width:100%;
+	display:block;
+	background-color:rgba(255,255,255,1.00);
+	padding-bottom:0.25em;
+	z-index:1000;
+}
+
+.top-nav-outer {
+	padding-left:5%;
+    width: 100%;
+    position: relative;
+}
+
+.top-nav-inner {
+	width: 100%;
+
+}
+
+
+nav ul {
+	list-style:none;
+	font-family:"Helvetica", Helvetica Neue, Arial, sans-serif;
+}
+
+nav ul li {
+	display:block;
+	float:left;
+	margin:15px;
+	padding:28px 0 0 0;
+	font-size: 24px
+}
+
+nav ul li a{
+
+	text-decoration:none;
+	color:rgba(0,0,0,1.00)	
+}
+
+nav ul li a:hover {
+	color:rgba(28,117,188,1.00)
+}
+
+
+
+</style>
+
+<div class="navcontainer">
+  <div class="top-nav-outer">
+    <div class="top-nav-inner">
+      <h1><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#top_image">Ansel Adams </a></h1>
+      <nav>
+        <ul>
+          <li> <a data-scroll data-options='{ "easing": "easeInQuad" }' href="#main_article">Bio</a></li>
+          <li> <a data-scroll data-options='{ "easing": "easeInQuad" }' href="#gallery">Gallery</a></li>
+          <li> <a data-scroll data-options='{ "easing": "easeInQuad" }' href="#in_color">In Color </a></li>
+          <li> <a data-scroll data-options='{ "easing": "easeInQuad" }' href="#footer"> Contact </a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
