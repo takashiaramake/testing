@@ -1,0 +1,19 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "this is a test yo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/takashiaramake/testing.git"
+  },
+  "author": "yo momma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/takashiaramake/testing/issues"
+  },
+  "homepage": "https://github.com/takashiaramake/testing"
+}
