@@ -2,8 +2,10 @@ var express = require('express');
 var app = express();
 var request = require('request');
 
+app.use(express.static(path.join(__dirname,'public')));
+
 app.get('/', function(req, res){
-	res.sendfile('./index.html');
+	res.sendfile('public/index.html');
 });
 
 app.listen(80,function(){
